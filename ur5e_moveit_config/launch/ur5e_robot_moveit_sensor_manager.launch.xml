@@ -1,0 +1,12 @@
+<launch>
+
+<!-- OJ 10.5.23
+ https://ros-planning.github.io/moveit_tutorials/doc/perception_pipeline/perception_pipeline_tutorial.html?highlight=depth 
+  -->	
+  <rosparam command="load" file="$(find ur5e_moveit_config)/config/sensors_3d.yaml" />
+  <param name="octomap_frame" type="string" value="odom_combined" />
+  <param name="octomap_resolution" type="double" value="0.05" />
+  <param name="max_range" type="double" value="5.0" />
+
+
+</launch>
